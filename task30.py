@@ -5,13 +5,13 @@
 # Ввод:  [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 # Вывод: [1, 9, 13, 14, 19]
 
-def arithmetic_sequence(a1: int, a_diff: int, n:int):
-    sequence = [a1]
+def arithmetic_progression(a1: int, a_diff: int, n:int):
+    progression = [a1]
     for i in range(2, n + 1):
-        sequence.append(a1 + (i - 1) * a_diff)
-    return sequence
+        progression.append(a1 + (i - 1) * a_diff)
+    return progression
 
 a1 = int(input('Введите первый член последовательности: '))
 a_diff = int(input('Введите разность между членами последовательности: '))
 n = int(input('Введите количество членов последовательности: '))
-print(*arithmetic_sequence(a1, a_diff, n))
+print(*arithmetic_progression(a1, a_diff, n))
